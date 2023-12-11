@@ -1,0 +1,407 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #61082B;
+  color:aliceblue;
+  font-size: 20px;
+
+}
+h1 {
+  color:#B4D0E7;
+  font-size: 60px;
+  text-align: center;
+}
+h3{
+  color:  #1E2761;
+  font-size: 30px;
+  font-weight: 300;
+
+}
+h2
+{
+  color:#B4D0E7;
+  font-size: 45px;
+
+}
+.nav_logo img{
+  border-radius: 50%;
+}
+li{
+  list-style-type: none;
+}
+/*------------HISTORY---------------*/
+.history h3{
+  text-align: center;
+  margin-bottom: 50px;
+  color: aliceblue;
+}
+
+.History_text p{
+  text-align:left;
+}
+.History_text {
+  text-indent: 30px;
+  margin: 40px;
+  padding: 25px;
+  background-color:#1E2761;
+  border-radius: 20px;
+  font-size: 25px;
+  margin-left: 100px ;
+  margin-right: 100px ;
+  font-weight: 200px;
+}
+/*---------------BURGERMENU-------------------------*/
+.nav_menu ul{
+  margin: 0;
+  padding: 0;
+}
+.nav_item li{
+  list-style: none;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  padding-left: 2rem;
+  height: 8rem;
+}
+.hamb{
+  display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: 0.5s;
+  font-weight: 400;
+  background-color: #B4D0E7;
+}
+.nav_menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_link {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-right: 3rem;
+  color:#B4D0E7;
+
+}
+
+.nav_item a{
+  text-decoration: none;
+
+}
+@media only screen and (max-width: 768px) {
+  .nav_menu{
+    position: fixed;
+    flex-direction: column;
+    background-color: #1E2761;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.05);
+    left: -100%;
+    top: 4rem;
+  }
+  .nav_link{
+    font-weight: 300;
+  }
+  .nav_menu.active{
+    left: 0;
+    z-index: 14;
+  }
+  .nav_item{
+    margin: 2.5rem 0;
+  }
+  .hamb{
+    display: block;
+    cursor: pointer;
+
+  }
+  .hamb.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamb.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamb.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/*------------------Image Galery---------------------*/
+.festival_big{
+  display: flex;
+  align-items: center;
+}
+.festival_big h1,h2{
+  margin-left: 100px ;
+}
+.festival_big_text p{
+  text-align:left;
+}
+.festival_big_text{
+  max-width: 1200px;
+  text-indent: 30px;
+  margin: 40px;
+  padding: 25px;
+  background-color:#1E2761;
+  border-radius: 20px;
+  font-size: 25px;
+  margin-left: 100px ;
+  margin-right: 50px ;
+  font-weight: 200px;
+}
+.festival_big img{
+  border-radius: 20px;
+  margin-right: 40px;
+
+}
+.img-gallery{
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+.img-gallery img{
+  width: 100%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.img-gallery img:hover{
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+
+}
+
+@media screen and (max-width: 768px) {
+  .festival_big {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .festival_big h1, .festival_big h2 {
+    margin-left: 0;
+  }
+
+  .festival_big_text {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 20px;
+    text-indent: 0;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .festival_big img {
+    margin-right: 0;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+/* --------------------------AFISHA PART----------------------*/
+
+.Afisha_Start p{
+  text-align: center;
+}
+.Afisha_Start {
+  text-indent: 30px;
+  margin: 40px;
+  padding: 25px;
+  background-color:#1E2761;
+  border-radius: 20px;
+  font-size: 25px;
+  margin-left: 100px ;
+  margin-right: 100px ;
+  font-weight: 200px;
+}
+.Berlinale_Afisha h2{
+  margin-left: 100px;
+}
+.yellow{
+  color: yellow;
+}
+.img-afisha {
+  width: 80%;
+  margin: 100px auto 50px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 50px;
+}
+
+.afisha-pic {
+  position: relative; /* Добавляем позиционирование для оверлея */
+  overflow: hidden; /* Скрываем оверлей, выходящий за пределы картинки */
+}
+
+.afisha-pic img {
+  border-radius: 25px;
+  width: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  border-radius: 25px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 0; /* Начинаем с высоты 0 */
+  overflow: hidden;
+  transition: .5s ease;
+}
+.overlay h3{
+  color: aliceblue;
+  text-align: center;
+
+}
+
+.afisha-pic:hover .overlay {
+  height: 100%; /* При наведении увеличиваем высоту до 100% */
+  padding: 20px;
+}
+.overlay .afisha-botton {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+.overlay .favorites {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-bottom: 30px ;
+}
+.overlay .afisha-botton input
+{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  letter-spacing: 1px;
+  color:aliceblue;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.overlay .afisha-botton input[type="submit"]{
+  background: aliceblue;
+  color: #1E2761;
+  max-width: 150px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-weight: 600;
+  z-index: 10px;
+}
+.add_star {
+  margin-left: 20px; /* изменено с margin-left на margin-right */
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+  border: none;
+  color: rgba(241, 226, 226, 0.5);;
+  cursor: pointer;
+  font-size: 25px;
+}
+/*---------------------FAVORITES-----------------*/
+.favorites-list
+{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.films h3{
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: 300;
+  
+}
+
+.films i{
+  cursor: pointer;
+  font-size: 40px;
+
+}
+.favorites-header{
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.films{
+  display: flex;
+  align-items: center;
+  background: #1E2761;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 50px;
+  border-radius: 40px;
+
+}
+.films img{
+   margin: 40px;
+   border-radius: 20%;
+}
+.films span{
+  
+  margin-right: 40px;
+  max-width: 150px;
+}
+
+.add_fav{
+  background-color: transparent;
+  border: none;
+  max-width: 40px;
+
+}
+.add_fav i{
+  color:#61082B;
+}
+.films i{
+  font-size: 50px;
+}
+.films img{
+  width: 300px;
+  height: 280px;
+
+}
+
+.favorites-title, .in_list{
+  color: aliceblue;
+  text-decoration: underline 4px solid #1E2761;
+  margin-right: 300px;
+}
+
+
+
+
+
+
+
+
+
