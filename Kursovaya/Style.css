@@ -72,6 +72,7 @@ li{
 }
 .hamb{
   display: none;
+  margin-right: 200px;
 }
 .bar {
   display: block;
