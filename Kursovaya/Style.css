@@ -99,7 +99,7 @@ li{
   text-decoration: none;
 
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1250px) {
   .nav_menu{
     position: fixed;
     flex-direction: column;
@@ -183,7 +183,7 @@ li{
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
   .festival_big {
     flex-direction: column;
     align-items: center;
